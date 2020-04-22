@@ -1,4 +1,6 @@
 def nyc_pigeon_organizer(data)
-  new_hash = Hash.new{|k, v| new_hash[k] = []}
-  data.map{|k, v| new_hash[v] << k}
+  name_hash = {}
+  data.each do |key, value|
+    key.each do |key, name|
+      name.each do |value|
 end
