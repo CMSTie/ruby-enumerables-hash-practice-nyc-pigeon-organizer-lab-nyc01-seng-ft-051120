@@ -1,3 +1,3 @@
 def nyc_pigeon_organizer(data)
-  new_hash = Hash.new 
+  new_hash = Hash.new{|k, v| 
 end
