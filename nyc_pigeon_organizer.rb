@@ -1,3 +1,5 @@
+require 'pry'
+
 def nyc_pigeon_organizer(data)
   name_hash = {}
   data.each do |key, value|
@@ -9,6 +11,7 @@ def nyc_pigeon_organizer(data)
         if !name_hash[name_value][key]
           name_hash[name_value][key] = []
         end
+        binding.pry
         name_hash[name_value][key] << key2.to_s
       end
     end
